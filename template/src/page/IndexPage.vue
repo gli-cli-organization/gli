@@ -22,7 +22,6 @@
 
 <script>
 
-import HelloWorld from '../components/HelloWorld';
 
 export default {
   name: 'IndexPage',
@@ -30,10 +29,7 @@ export default {
     return {
       msg: 'gli 自定义前端构建工具'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-  },
-  components:{
-    HelloWorld{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  }
 
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
