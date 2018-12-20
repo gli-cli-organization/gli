@@ -1,10 +1,10 @@
 <template>
-  <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
+  <li><a href="https://github.com/gli-cli-organization/gli" target="_blank">gli</a></li>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Gli',
   data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
     return {
 
