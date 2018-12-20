@@ -12,14 +12,7 @@ webpackConfig = {
     entry: {
         app: ['babel-polyfill', './src/main.js']
     },
-    externals: {
-        echarts: {
-            amd: 'echarts',
-            root: 'Echarts',
-            commonjs: 'echarts',
-            commonjs2: 'echarts'
-        }
-    },
+    externals: {},
     output: {
         libraryTarget: 'umd',
         path: config.build.assetsRoot,

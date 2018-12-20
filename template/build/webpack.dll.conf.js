@@ -8,20 +8,8 @@ dllConfig = {
         lib: [
             'axios',
             'babel-polyfill',
-            'babel-runtime/core-js/promise.js',
-            'babel-runtime/helpers/extends.js',
-            'babel-runtime/helpers/typeof.js',
-            'buffer',
-            'element-ui',
-            'js-cookie',
-            'nprogress',
-            'qs',
-            'vue/dist/vue.esm.js',
             'vue-router',
             'vuex',
-            'element-ui/lib/theme-chalk/index.css',
-            'normalize.css/normalize.css',
-            'nprogress/nprogress.css'
         ]
     },
     output: {
