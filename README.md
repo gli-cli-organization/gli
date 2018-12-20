@@ -103,10 +103,11 @@ import store from  './store/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
 
+```
 
 #### helper
 
-上面的``if_eq``，还有源码中的``unless_eq``是原本 gli中注册的那个辅助函数，在gli/lib中的generate.js：
+上面的`if_eq`，还有源码中的`unless_eq`是原本 gli 中注册的那个辅助函数，在 gli/lib 中的 generate.js：
 
 ```
 
@@ -124,7 +125,8 @@ return a === b
 })
 
 ```
-类似的，你也可以自定义一些函数，，在``meta.js``中``helpers``对象中可以加入自己的方法，如源码中就有注册一个``if_or``的方法,你在文件中就可以用``{{#if_or a b}}{{/if_or}}``去使用
+
+类似的，你也可以自定义一些函数，，在`meta.js`中`helpers`对象中可以加入自己的方法，如源码中就有注册一个`if_or`的方法,你在文件中就可以用`{{#if_or a b}}{{/if_or}}`去使用
 
 ```
 
@@ -142,9 +144,10 @@ return options.fn(this);
 ```
 
 #### filters
-``filters`` 是根据条件过滤文件，源码:
-```
 
+`filters` 是根据条件过滤文件，源码:
+
+```
 "filters": {
 ".eslintrc.js": "lint",
 ".eslintignore": "lint",
@@ -154,11 +157,11 @@ return options.fn(this);
 "test/e2e/**/_": "e2e",
 "src/router/\*\*/_": "router" //例如上面的 router 为 true 的时候，就会加入这个目录
 },
-
-```
-同样，这里我可以加入自己的vuex目录，当，``vuex``为``true``的时候，会导入这个目录
 ```
 
+同样，这里我可以加入自己的 vuex 目录，当，`vuex`为`true`的时候，会导入这个目录
+
+```
 "filters": {
 ".eslintrc.js": "lint",
 ".eslintignore": "lint",
@@ -171,8 +174,8 @@ return options.fn(this);
 },
 
 ```
-然后在``main.js``引入``vuex   ``
 
+然后在`main.js`引入`vuex`
 
 ```
 
@@ -196,7 +199,9 @@ components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 ```
-还有在``template/package.json``中也要加入``vuex``
+
+还有在`template/package.json`中也要加入`vuex`
+
 ```
 
 "dependencies": {
@@ -207,7 +212,8 @@ components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 },
 
 ```
-加入一个询问是否是移动端的，是移动端的话，会引入 ``lib-flexible.js ``以及相关配置的scss文件
+
+加入一个询问是否是移动端的，是移动端的话，会引入 `lib-flexible.js`以及相关配置的 scss 文件
 
 ```
 
@@ -218,18 +224,23 @@ components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 
 ```
 
-最后,提交到github自己的分支上，就可以使用了
-
+最后,提交到 github 自己的分支上，就可以使用了
 
 ```
 
 vue init gli name
 
 ```
-#### github地址
+
+#### github 地址
+
 [https://github.com/gli-cli-organization/gli](https://github.com/gli-cli-organization/gli)
 
 #### 参考：
-[vue-cli webpack的配置详解](http://blog.csdn.net/hongchh/article/details/55113751 )
-[从vue-cli源码学习如何写模板 ](https://github.com/dwqs/blog/issues/56)
+
+[vue-cli webpack 的配置详解](http://blog.csdn.net/hongchh/article/details/55113751)
+[从 vue-cli 源码学习如何写模板 ](https://github.com/dwqs/blog/issues/56)
+
+```
+
 ```
