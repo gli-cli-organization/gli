@@ -1,7 +1,9 @@
 /build/
 /config/
 /dist/
-/*.js
+/src/store/
+/src/router/*.js
+/src/main.js
 {{#unit}}
 /test/unit/coverage/
 {{/unit}}
