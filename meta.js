@@ -53,10 +53,10 @@ module.exports = {
             "message": "is Mobile project?"
         },
 
-        "lint": {
-            "type": "confirm",
-            "message": "Use ESLint to lint your code?"
-        },
+//         "lint": {
+//             "type": "confirm",
+//             "message": "Use ESLint to lint your code?"
+//         },
         "lintConfig": {
             "when": "lint",
             "type": "list",
