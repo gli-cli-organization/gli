@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./public/<%= htmlWebpackPlugin.options.libCssName %>">
+		<script src="./public/<%= htmlWebpackPlugin.options.libJsName %>"></script>
     <title>{{ name }}</title>
     {{#isMobile}}
     <script src="static/js/lib-flexible.js" > </script>
