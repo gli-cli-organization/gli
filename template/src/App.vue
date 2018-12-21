@@ -8,14 +8,10 @@
     {{/router}}
   </div>
 </template>
-
 <script>
-
-import './css/base.scss';
-
+import './css/base.scss'
 {{#unless router}}
 import Gli from './components/gli'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
 {{/unless}}
 export default {
   name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},

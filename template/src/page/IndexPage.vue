@@ -8,7 +8,6 @@
       <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
       <br>
-
     </ul>
     <h2>Ecosystem</h2>
     <ul>
@@ -19,10 +18,7 @@
     </ul>
   </div>
 </template>
-
 <script>
-
-
 export default {
   name: 'IndexPage',
   data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
@@ -30,10 +26,8 @@ export default {
       msg: 'gli 自定义前端构建工具'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   }
-
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
